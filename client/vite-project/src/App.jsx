@@ -1,29 +1,9 @@
-import { useState } from "react";
+import AddTask from "./components/AddTask.jsx";
 
 function App() {
-  const [addVal, setAddVal] = useState([]);
-  const [add, setAdd] = useState("");
-  const handleClick = () => {
-    const arr = [];
-    arr.push(add);
-    setAddVal((prev) => [...prev, add]);
-  };
   return (
     <>
-      <ul>
-        {addVal.map((i) => (
-          <li>{i}</li>
-        ))}
-      </ul>
-      <div>
-        <input
-          type="text"
-          name="text"
-          value={add}
-          onChange={(e) => setAdd(e.target.value)}
-        />
-        <button onClick={handleClick}>Add</button>
-      </div>
+      <AddTask />
     </>
   );
 }
