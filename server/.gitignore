@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Dependency directories
+/jspm_packages/
+/pnpm-debug.log
+/yarn-error.log
+
+# Testing
+/coverage/
+/nyc_output/
+
+# Compiled binary addons (uncomment if your application uses this)
+/build/Release/
+
+# Production
+.DS_Store
+.env
+*.log
+
+# Runtime data
+pids/
+logs/
